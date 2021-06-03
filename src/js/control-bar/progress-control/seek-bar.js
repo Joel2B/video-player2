@@ -97,8 +97,9 @@ class SeekBar extends Slider {
     }
     this.updateInterval = this.setInterval(this.update, Fn.UPDATE_REFRESH_INTERVAL);
   }
-
+  
   disableInterval_(e) {
+    console.log('test');
     if (this.player_.liveTracker && this.player_.liveTracker.isLive() && e && e.type !== 'ended') {
       return;
     }
